@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Welcome</title>
+    <title>Yahoo !!!!!!! From JSP</title>
 </head>
 <body>
-    Welcome, ${name} and Password ${password}
+    <p>Hello user</p>
 </body>
 </html>
