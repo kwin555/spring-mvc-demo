@@ -1,23 +1,37 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE html>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 <head>
-    <title>Welcome</title>
-    <link href="webjars/bootstrap/4.4.1/css/bootstrap.min.css"
-          rel="stylesheet">
+<title>Your Todo</title>
+<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+	rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Add a todo</h1>
-        <form action="/add-todo" method="POST">
-            <fieldset class="form-group">
-                <label> Description: </label>
-                &nbsp; <input name="desc" type="text" class="form-control" required="required" />
-            </fieldset>
-            <input class="btn btn-success" type="submit" value ="Add" />
-        </form>
-    </div>
-    <script src="webjars/jquery/3.3.1/jquery.min.js"></script>
-    <script src="webjars/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<div class="container">
+		<form:form method="post" commandName="todo">
+			<form:hidden path="id"/>
+			<form:hidden path="user"/>
+
+			<fieldset class="form-group">
+				<form:label path="desc">Description</form:label>
+				<form:input path="desc" type="text" class="form-control"
+					required="required"/>
+				<form:errors path="desc" cssClass="text-warning" />
+			</fieldset>
+
+			<fieldset class="form-group">
+				<form:label path="targetDate">Target Date</form:label>
+				<form:input path="targetDate" type="text" class="form-control"
+							required="required"/>
+				<form:errors path="targetDate" cssClass="text-warning" />
+			</fieldset>
+
+			<button type="submit" class="btn btn-success">Submit</button>
+		</form:form>
+	</div>
+
+	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 </body>
 </html>

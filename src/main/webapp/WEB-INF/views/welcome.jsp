@@ -1,12 +1,8 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE html>
 <html>
 <head>
-    <title>Welcome</title>
+<title>Yahoo!!</title>
 </head>
 <body>
-    <h1>Welcome, ${name} and Password ${password}</h1>
-    <br/>
-    Now, you can <a href="/list-todos">manage your todos</a>
+Welcome ${name}. You are now authenticated. <a href="/list-todos">Click here</a> to start maintaining your todo's.
 </body>
 </html>

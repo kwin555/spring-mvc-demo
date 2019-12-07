@@ -1,15 +1,11 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE html>
 <html>
 <head>
-    <title>Yahoo !!!!!!! From JSP</title>
+<title>Login Page</title>
 </head>
 <body>
-<p><font color="red">${errorMessage}</font></p>
-    <form action="/login" method="post">
-        Enter your name: <input type="text" name="name"/>
-        Enter your password: <input type="password" name="password"/>
-        <input type="submit" value="Login">
+    <p><font color="red">${errorMessage}</font></p>
+    <form action="/login" method="POST">
+        Name : <input name="name" type="text" /> Password : <input name="password" type="password" /> <input type="submit" />
     </form>
 </body>
 </html>
