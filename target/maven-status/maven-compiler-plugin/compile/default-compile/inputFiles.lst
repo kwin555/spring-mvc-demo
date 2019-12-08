@@ -1,5 +1,5 @@
 /Users/kevinnguyen/Desktop/springboot-practice/untitled/src/main/java/com/in28minutes/todo/service/TodoService.java
-/Users/kevinnguyen/Desktop/springboot-practice/untitled/src/main/java/com/in28minutes/login/LoginController.java
 /Users/kevinnguyen/Desktop/springboot-practice/untitled/src/main/java/com/in28minutes/todo/TodoController.java
-/Users/kevinnguyen/Desktop/springboot-practice/untitled/src/main/java/com/in28minutes/login/LoginService.java
+/Users/kevinnguyen/Desktop/springboot-practice/untitled/src/main/java/com/in28minutes/login/WelcomeController.java
 /Users/kevinnguyen/Desktop/springboot-practice/untitled/src/main/java/com/in28minutes/model/Todo.java
+/Users/kevinnguyen/Desktop/springboot-practice/untitled/src/main/java/com/in28minutes/security/SecurityConfiguration.java

@@ -1,11 +1,5 @@
-<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<html>
-<head>
-<title>Your Todo</title>
-<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
-	rel="stylesheet">
-</head>
-<body>
+<%@include file="header.jspf"%>
+<%@ include file="navigation.jspf" %>
 
 	<div class="container">
 		<form:form method="post" commandName="todo">
@@ -30,8 +24,4 @@
 		</form:form>
 	</div>
 
-	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
-	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-</body>
-</html>
+<%@ include file="footer.jspf"%>
