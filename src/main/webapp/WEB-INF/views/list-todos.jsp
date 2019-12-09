@@ -1,9 +1,10 @@
-	<%@include file="header.jspf"%>
+<%@ taglib prefix="spring" uri="http://java.sun.com/jsf/html" %>
+<%@include file="header.jspf"%>
 	<%@ include file="navigation.jspf" %>
 
 	<div class="container">
 		<table class="table table-striped">
-			<caption>Your Todos are</caption>
+			<caption>Your todos are:</caption>
 			<thead>
 				<tr>
 					<th>Description</th>
