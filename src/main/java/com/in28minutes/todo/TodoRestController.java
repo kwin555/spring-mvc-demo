@@ -3,6 +3,7 @@ package com.in28minutes.todo;
 import com.in28minutes.model.Todo;
 import com.in28minutes.todo.service.TodoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,5 +18,10 @@ public class TodoRestController {
     @RequestMapping(path = "/todos")
     public List<Todo> retrieveTodos() {
         return todoService.retrieveTodos("in28minutes");
+    }
+
+    @RequestMapping(path = "/todos/{id}")
+    public Todo retrieveTodo(@PathVariable int id) {
+        return todoService.retrieveTodo(id);
     }
 }
